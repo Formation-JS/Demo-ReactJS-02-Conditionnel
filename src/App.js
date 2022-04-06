@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import NumberEven from './components/number-even/number-even';
+import Person from './components/person/person';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Demo 02 - Conditionnel</h1>
+      <NumberEven number={13} />
+      <Person />
+      <Person name='Balthazar' hobby={'L\'argent'} />
     </div>
   );
 }
